@@ -1,7 +1,7 @@
 ﻿# SmolBoi
  A mobile app meant to give you just a little spark of joy
 
-## Author
+## Author and Illustrator
 Ameilia Valdes
 
 ## Technologies
