@@ -13,6 +13,7 @@ namespace SmolBoii.Views
 		}
 		public int levelUpCounter = 0;
 		public int tapCount = 0;
+		public int medTapCount = 0;
 		public int fedCount = 0;
 		public bool justFed = false;
 		public bool doneEating = false;
@@ -37,6 +38,15 @@ namespace SmolBoii.Views
 			else if (fedCount % 3 == 0 && fedCount != 0)
 			{
 				imageSender.Source = "../Imgs/SmolBoiLookUp.png";
+			}
+			else if (levelUpCounter == 1)
+			{
+				imageSender.Source = "../Imgs/DoneGrowing.png";
+				medTapCount++;
+			}
+			else if (levelUpCounter >= 1 && medTapCount > 35)
+			{
+				imageSender.Source = "../Imgs/MediumBoi.png";
 			}
 			else
 			{
